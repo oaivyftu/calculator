@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const App = () => {
-  var a = 30;
+import Calculator from "../Calculator";
+
+const App: React.FC = () => {
   return (
-    <div>Calculator {a}</div>
+    <div>
+      <Calculator />
+    </div>
   );
 };
 
