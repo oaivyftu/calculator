@@ -2,6 +2,11 @@ This project was a calculator.
 
 ## Explanation:
 
+Các trường hợp:
+1/ Nhấn vào các toán hạng lần thứ nhất, sẽ không tính toán và hiển thị kết quả ngay
+2/ Nhấn vào các toán hạng lần thứ hai trở đi, mỗi lần nhấp vào toán hạng thì sẽ bắt đầu tính toán và hiển thị kết quả
+==> để phân biệt nhấp vào lần thứ nhất hay thứ hai ta sẽ check giá trị của state value. Ban đầu `value` sẽ có giá trị null. Khi nhấp vào lần thứ hai trở đi, nó sẽ có giá trị của kết quả tính toán
+
 - Can 2 ham:
   1/ Ham `inputDigit`: xu ly hanh dong khi nhap vao cac con so
   2/ Ham `performOperation`: xu ly cac phep tinh +, -, \*, /

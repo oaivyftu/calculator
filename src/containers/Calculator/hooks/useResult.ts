@@ -47,7 +47,6 @@ export default () => {
         setState({
           ...state,
           value: parseFloat(state.displayValue),
-          waitingForOperand: true,
         });
       } else {
         const newValue = CalculatorOperations[state.operand || operand](
@@ -58,16 +57,27 @@ export default () => {
           ...state,
           value: newValue,
           displayValue: String(newValue),
-          waitingForOperand: true,
         });
       }
-      setState({
-        ...state,
+      setState((prevState) => ({
+        ...prevState,
         operand,
-      });
+        waitingForOperand: true,
+      }));
     },
     [state]
   );
 
-  return { state, setState, inputDigit, performOperation };
+  const clear = useCallback(
+    () =>
+      setState({
+        ...state,
+        value: null,
+        displayValue: "0",
+        waitingForOperand: false,
+      }),
+    [state]
+  );
+
+  return { state, setState, clear, inputDigit, performOperation };
 };

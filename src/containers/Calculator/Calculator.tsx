@@ -8,7 +8,7 @@ import ResultBar from "../../components/ResultBar";
 import useResult from "./hooks/useResult";
 
 const Calculator: React.FC = () => {
-  const { state, setState, inputDigit, performOperation } = useResult();
+  const { state, clear, inputDigit, performOperation } = useResult();
 
   const numbers = useMemo(
     () =>
@@ -44,7 +44,7 @@ const Calculator: React.FC = () => {
       <ResultBar result={state.displayValue} />
       <S.ButtonsWrap>
         <S.ClearArea>
-          <Button name="Clear" onClickHandler={() => null}>
+          <Button name="Clear" onClickHandler={() => clear()}>
             Clear
           </Button>
         </S.ClearArea>
