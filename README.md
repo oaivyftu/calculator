@@ -11,9 +11,9 @@ Các trường hợp:
   1/ Ham `inputDigit`: xu ly hanh dong khi nhap vao cac con so
   2/ Ham `performOperation`: xu ly cac phep tinh +, -, \*, /
 
-- Minh se su dung mot state la `waitingForOperand` de đánh dấu có phải mình đang đợi nhấp vào các toán hạng (operand) hay ko?
+- Su dung mot state la `waitingForOperand` de đánh dấu có phải mình đang đợi nhấp vào các toán hạng (operand) hay ko?
 
-- Mình sẽ sử dụng 2 state là `value` de luu gia tri cua các phép tính và `displayValue` để lưu giá trị hiển thị trên màn hình
+- Sử dụng 2 state là `value` de luu gia tri cua các phép tính và `displayValue` để lưu giá trị hiển thị trên màn hình
 
 ## Available Scripts
 
