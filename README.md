@@ -1,5 +1,8 @@
 This project was a calculator.
 
+## TODO:
+1. Build a more sophisticated calculator that can operate functions similar with a fx500ms calculator
+
 ## Explanation:
 
 Các trường hợp:
