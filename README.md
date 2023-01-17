@@ -1,6 +1,9 @@
-This project was a calculator.
+This project was a calculator simulation.
+
+![img.png](img.png)
 
 ## TODO:
+
 1. Build a more sophisticated calculator that can operate functions similar with a fx500ms calculator
 
 ## Explanation:

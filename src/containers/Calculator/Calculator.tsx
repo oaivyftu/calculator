@@ -12,10 +12,11 @@ const Calculator: React.FC = () => {
 
   const numbers = useMemo(
     () =>
-      Object.entries([7, 8, 9, 4, 5, 6, 1, 2, 3]).map(([key, number]) => (
+      Object.entries([7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.']).map(([key, number]) => (
         <Button
           key={key}
           name="Number"
+          span={number === 0 ? 2 : 1}
           onClickHandler={() => inputDigit(number)}
         >
           {number}
@@ -26,7 +27,7 @@ const Calculator: React.FC = () => {
 
   const operands = useMemo(
     () =>
-      Object.entries(["+", "-", "/", "="]).map(([key, operand]) => (
+      Object.entries(["+", "-", "x", "/", "="]).map(([key, operand]) => (
         <Button
           key={key}
           name="Operand"

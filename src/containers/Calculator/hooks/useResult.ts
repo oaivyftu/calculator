@@ -7,7 +7,7 @@ const CalculatorOperations: {
 } = {
   "+": (prevValue, nextValue) => prevValue + nextValue,
   "-": (prevValue, nextValue) => prevValue - nextValue,
-  "*": (prevValue, nextValue) => prevValue - nextValue,
+  "x": (prevValue, nextValue) => prevValue * nextValue,
   "/": (prevValue, nextValue) => prevValue / nextValue,
   "=": (prevValue) => prevValue,
 };
@@ -56,7 +56,7 @@ export default () => {
         setState({
           ...state,
           value: newValue,
-          displayValue: String(newValue),
+          displayValue: String(Number(newValue.toFixed(2))),
         });
       }
       setState((prevState) => ({

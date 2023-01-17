@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.button`
+export default styled.button<{span?: number}>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,6 +12,7 @@ export default styled.button`
   background: ${(props) => props.color || props.theme.colors.primary};
   color: white;
   font-size: 20px;
+  grid-column-end: span ${(props) => props.span || 1};
   &:hover {
     cursor: pointer;
     background: #aaa;
