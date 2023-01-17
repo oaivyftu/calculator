@@ -1,4 +1,4 @@
-This project was a calculator simulation.
+A calculator simulation.
 
 ![img.png](img.png)
 
