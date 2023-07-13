@@ -1,25 +1,6 @@
-A calculator simulation.
+Calculator simulation.
 
 ![img.png](img.png)
-
-## TODO:
-
-1. Build a more sophisticated calculator that can operate functions similar with a fx500ms calculator
-
-## Explanation:
-
-Các trường hợp:
-1/ Nhấn vào các toán hạng lần thứ nhất, sẽ không tính toán và hiển thị kết quả ngay
-2/ Nhấn vào các toán hạng lần thứ hai trở đi, mỗi lần nhấp vào toán hạng thì sẽ bắt đầu tính toán và hiển thị kết quả
-==> để phân biệt nhấp vào lần thứ nhất hay thứ hai ta sẽ check giá trị của state value. Ban đầu `value` sẽ có giá trị null. Khi nhấp vào lần thứ hai trở đi, nó sẽ có giá trị của kết quả tính toán
-
-- Can 2 ham:
-  1/ Ham `inputDigit`: xu ly hanh dong khi nhap vao cac con so
-  2/ Ham `performOperation`: xu ly cac phep tinh +, -, \*, /
-
-- Su dung mot state la `waitingForOperand` de đánh dấu có phải mình đang đợi nhấp vào các toán hạng (operand) hay ko?
-
-- Sử dụng 2 state là `value` de luu gia tri cua các phép tính và `displayValue` để lưu giá trị hiển thị trên màn hình
 
 ## Available Scripts
 
